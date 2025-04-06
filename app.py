@@ -4,9 +4,8 @@ import numpy as np
 import pandas as pd
 
 # Load model and scaler
-model = pickle.load(open(r"C:\Users\Windows\house price\save_models\house_Prediction_model.sav", "rb"))
-
-scaler = pickle.load(open(r"C:\Users\Windows\house price\save_models\scaler.sav", "rb"))
+model = pickle.load(open("save_models/house_Prediction_model.sav", "rb"))
+scaler = pickle.load(open("save_models/scaler.sav", "rb"))
 
 st.set_page_config(page_title="Chennai House Price Predictor", layout="centered", page_icon="🏠")
 st.title("🏠 Chennai House Price Prediction")
